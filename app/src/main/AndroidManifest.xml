@@ -15,10 +15,7 @@
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.MaterialComponents">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!-- Elimina el intent filter de aquí -->
         </activity>
         <activity
             android:name=".MainActivity"
@@ -30,5 +27,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 </manifest>

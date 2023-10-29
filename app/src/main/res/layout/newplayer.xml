@@ -19,7 +19,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageCamara"
         app:layout_constraintEnd_toStartOf="@+id/textName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@android:drawable/ic_menu_myplaces" />
 
@@ -34,10 +34,10 @@
         android:gravity="bottom"
         android:text="Name"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/textPhonetic"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageMonigot"
-        app:layout_constraintTop_toTopOf="parent"
+
         app:layout_constraintVertical_bias="0.505" />
 
     <TextView
@@ -89,37 +89,37 @@
         app:layout_constraintStart_toEndOf="@+id/imageTelefono"
         app:layout_constraintTop_toBottomOf="@+id/imageAndroid" />
 
-    <TextView
-        android:id="@+id/textEmail"
-        android:layout_width="258dp"
-        android:layout_height="74dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="54dp"
-        android:gravity="bottom"
-        android:text="E-mail"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageCorreo"
-        app:layout_constraintTop_toBottomOf="@+id/textPhone" />
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="256dp"
+            android:layout_height="73dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="54dp"
+            android:gravity="bottom"
+            android:text="E-mail"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageCorreo"
+            app:layout_constraintTop_toBottomOf="@+id/textPhone" />
 
-    <ImageView
-        android:id="@+id/imageCamara"
-        android:layout_width="66dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageTelefono"
-        app:layout_constraintEnd_toStartOf="@+id/imageAndroid"
-        app:layout_constraintHorizontal_bias="0.588"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageMonigot"
-        app:srcCompat="@android:drawable/ic_menu_camera" />
+        <ImageView
+            android:id="@+id/imageCamara"
+            android:layout_width="66dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageTelefono"
+            app:layout_constraintEnd_toStartOf="@+id/imageAndroid"
+            app:layout_constraintHorizontal_bias="0.588"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageMonigot"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
 
-    <ImageView
+        <ImageView
         android:id="@+id/imageAndroid"
         android:layout_width="139dp"
         android:layout_height="83dp"
@@ -145,30 +145,60 @@
         app:layout_constraintTop_toBottomOf="@+id/textNickname"
         app:layout_constraintVertical_bias="0.315" />
 
-    <ImageView
-        android:id="@+id/imageTelefono"
-        android:layout_width="69dp"
-        android:layout_height="75dp"
-        android:layout_marginBottom="2dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageCorreo"
-        app:layout_constraintEnd_toStartOf="@+id/textPhone"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageCamara"
-        app:srcCompat="@android:drawable/ic_menu_call" />
+        <ImageView
+            android:id="@+id/imageTelefono"
+            android:layout_width="69dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageCorreo"
+            app:layout_constraintEnd_toStartOf="@+id/textPhone"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageCamara"
+            app:srcCompat="@android:drawable/ic_menu_call" />
 
-    <ImageView
-        android:id="@+id/imageCorreo"
-        android:layout_width="68dp"
-        android:layout_height="73dp"
-        android:layout_marginBottom="30dp"
+        <ImageView
+            android:id="@+id/imageCorreo"
+            android:layout_width="68dp"
+            android:layout_height="73dp"
+            android:layout_marginBottom="50dp"
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textEmail"
-        app:layout_constraintHorizontal_bias="0.46"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageTelefono"
-        app:srcCompat="@android:drawable/sym_action_email" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textEmail"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageTelefono"
+            app:srcCompat="@android:drawable/sym_action_email" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="232dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textPhone"
+            app:layout_constraintTop_toBottomOf="@+id/buttonChange"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/mi_color_primary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toTopOf="@+id/textName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:title="Play Juegos" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
