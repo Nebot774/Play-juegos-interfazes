@@ -17,79 +17,127 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="70dp"
         app:layout_constraintBottom_toTopOf="@+id/imageCamara"
-        app:layout_constraintEnd_toStartOf="@+id/textName"
+        app:layout_constraintEnd_toStartOf="@+id/TiLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@android:drawable/ic_menu_myplaces" />
 
-    <TextView
-        android:id="@+id/textName"
-        android:layout_width="260dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:gravity="bottom"
-        android:text="Name"
-        android:textSize="34sp"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageMonigot"
 
-        app:layout_constraintVertical_bias="0.505" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TiLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-    <TextView
-        android:id="@+id/textPhonetic"
-        android:layout_width="260dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:gravity="bottom"
-        android:text="Phonetic name"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/textNickname"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.847"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textName" />
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageMonigot"
+            app:layout_constraintVertical_bias="0.505">
 
-    <TextView
-        android:id="@+id/textNickname"
-        android:layout_width="260dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textName"
+            android:layout_width="260dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom"
+            android:hint="Name"
+            android:textSize="34sp"
+             />
+    </com.google.android.material.textfield.TextInputLayout>
 
-        android:layout_marginEnd="10dp"
-        android:gravity="bottom"
-        android:text="Nickname"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageAndroid"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.839"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textPhonetic"/>
 
-    <TextView
-        android:id="@+id/textPhone"
-        android:layout_width="258dp"
-        android:layout_height="74dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="15dp"
-        android:gravity="bottom"
-        android:text="Phone"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/textEmail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageTelefono"
-        app:layout_constraintTop_toBottomOf="@+id/imageAndroid" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TiLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/TiLayout"
+            app:layout_constraintBottom_toTopOf="@+id/TiLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.847"
+            app:layout_constraintStart_toStartOf="parent"
+            >
 
-        <TextView
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textPhonetic"
+                android:layout_width="260dp"
+                android:layout_height="68dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="bottom"
+                android:hint="Phonetic name"
+                android:textSize="34sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TiLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/imageAndroid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.839"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TiLayout2"
+            >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textNickname"
+            android:layout_width="260dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="bottom"
+            android:hint="Nickname"
+            android:textSize="34sp"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TiLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/TiLayout5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageTelefono"
+            app:layout_constraintTop_toBottomOf="@+id/imageAndroid"
+            >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textPhone"
+            android:layout_width="258dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="bottom"
+            android:hint="Phone"
+            android:textSize="34sp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TiLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageCorreo"
+            app:layout_constraintTop_toBottomOf="@+id/TiLayout4"
+            >
+
+
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/textEmail"
             android:layout_width="256dp"
             android:layout_height="73dp"
@@ -97,12 +145,12 @@
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="54dp"
             android:gravity="bottom"
-            android:text="E-mail"
+            android:hint="E-mail"
             android:textSize="34sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageCorreo"
-            app:layout_constraintTop_toBottomOf="@+id/textPhone" />
+             />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
 
         <ImageView
             android:id="@+id/imageCamara"
@@ -120,30 +168,28 @@
             app:srcCompat="@android:drawable/ic_menu_camera" />
 
         <ImageView
-        android:id="@+id/imageAndroid"
-        android:layout_width="139dp"
-        android:layout_height="83dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="45dp"
-        app:layout_constraintBottom_toTopOf="@+id/textPhone"
-        app:layout_constraintEnd_toStartOf="@+id/buttonChange"
-        app:layout_constraintStart_toEndOf="@+id/imageCamara"
-        app:layout_constraintTop_toBottomOf="@+id/textNickname"
-        app:srcCompat="@android:mipmap/sym_def_app_icon" />
+            android:id="@+id/imageAndroid"
+            android:layout_width="139dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toStartOf="@+id/buttonChange"
+            app:layout_constraintStart_toEndOf="@+id/imageCamara"
+            app:layout_constraintTop_toBottomOf="@+id/TiLayout3"
+            app:srcCompat="@android:mipmap/sym_def_app_icon" />
 
-    <Button
-        android:id="@+id/buttonChange"
-        android:layout_width="109dp"
-        android:layout_height="59dp"
-        android:layout_marginEnd="16dp"
-        android:text="CHANGE"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textPhone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageAndroid"
-        app:layout_constraintTop_toBottomOf="@+id/textNickname"
-        app:layout_constraintVertical_bias="0.315" />
+        <Button
+            android:id="@+id/buttonChange"
+            android:layout_width="109dp"
+            android:layout_height="59dp"
+            android:layout_marginEnd="16dp"
+            android:text="CHANGE"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/TiLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageAndroid"
+            app:layout_constraintTop_toBottomOf="@+id/TiLayout3"
+            app:layout_constraintVertical_bias="0.493" />
 
         <ImageView
             android:id="@+id/imageTelefono"
@@ -151,7 +197,7 @@
             android:layout_height="75dp"
             android:layout_marginBottom="20dp"
             app:layout_constraintBottom_toTopOf="@+id/imageCorreo"
-            app:layout_constraintEnd_toStartOf="@+id/textPhone"
+            app:layout_constraintEnd_toStartOf="@+id/TiLayout4"
             app:layout_constraintHorizontal_bias="0.484"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageCamara"
@@ -162,9 +208,8 @@
             android:layout_width="68dp"
             android:layout_height="73dp"
             android:layout_marginBottom="50dp"
-
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textEmail"
+            app:layout_constraintEnd_toStartOf="@+id/TiLayout5"
             app:layout_constraintHorizontal_bias="0.46"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageTelefono"
@@ -178,10 +223,10 @@
             android:layout_marginTop="232dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="32dp"
-            app:layout_constraintBottom_toBottomOf="@+id/textEmail"
+            app:layout_constraintBottom_toBottomOf="@+id/TiLayout5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/textPhone"
+            app:layout_constraintStart_toEndOf="@+id/TiLayout4"
             app:layout_constraintTop_toBottomOf="@+id/buttonChange"
             app:layout_constraintVertical_bias="1.0" />
 
@@ -192,7 +237,7 @@
             android:background="@color/mi_color_primary"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
-            app:layout_constraintBottom_toTopOf="@+id/textName"
+            app:layout_constraintBottom_toTopOf="@+id/TiLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
