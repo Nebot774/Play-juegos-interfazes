@@ -3,4 +3,5 @@
     <string name="action_settings">settings\n</string>
     <string name="action_search">search\n</string>
     <string name="action_add">add</string>
+    <string name="fab_description">Descripción de la acción del botón</string>
 </resources>
