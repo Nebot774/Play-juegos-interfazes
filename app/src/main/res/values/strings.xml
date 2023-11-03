@@ -4,4 +4,5 @@
     <string name="action_search">search\n</string>
     <string name="action_add">add</string>
     <string name="fab_description">Descripción de la acción del botón</string>
+    <string name="fab_description2">Botón de acción flotante</string> <!-- Texto que describe el FAB -->
 </resources>
