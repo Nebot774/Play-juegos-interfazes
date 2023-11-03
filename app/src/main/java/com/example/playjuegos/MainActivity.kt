@@ -15,10 +15,17 @@ class MainActivity : ComponentActivity() {
         setContentView(R.layout.activity_main)
         val jugador = findViewById<Button>(R.id.button1)
         jugador.setOnClickListener { lanzarNewPlayer() }
+        val preferense=findViewById<Button>(R.id.button3)
+        preferense.setOnClickListener{lanzarPreferences()}
     }
 
     private fun lanzarNewPlayer() {
         val i = Intent(this, NewPlayer::class.java)
+        startActivity(i)
+    }
+
+    private fun lanzarPreferences() {
+        val i = Intent(this, Preferences::class.java)
         startActivity(i)
     }
 
