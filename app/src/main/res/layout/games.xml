@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Toolbar Layout -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Play Juegos"
+        />
+
+    <!-- Este bloque se repite 7 veces -->
+    <!-- Bloque 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <!-- ImageView -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background" /> <!-- Reemplaza con tu imagen -->
+
+        <!-- RadioButton -->
+        <RadioButton
+            android:id="@+id/botoAngryBird"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Angry Bird " /> <!-- Texto del RadioButton -->
+    </LinearLayout>
+    <!-- Bloque 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <!-- ImageView -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background" /> <!-- Reemplaza con tu imagen -->
+
+        <!-- RadioButton -->
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Opción 1" /> <!-- Texto del RadioButton -->
+    </LinearLayout>
+    <!-- Bloque 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <!-- ImageView -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background" /> <!-- Reemplaza con tu imagen -->
+
+        <!-- RadioButton -->
+        <RadioButton
+            android:id="@+id/botoHillClimbing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Hill Climbing Racing" /> <!-- Texto del RadioButton -->
+    </LinearLayout>
+
+    <!-- Bloque 4 -->
+    <!-- Bloque 5 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <!-- ImageView -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background" /> <!-- Reemplaza con tu imagen -->
+
+        <!-- RadioButton -->
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Opción 1" /> <!-- Texto del RadioButton -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <!-- ImageView -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background" /> <!-- Reemplaza con tu imagen -->
+
+        <!-- RadioButton -->
+        <RadioButton
+            android:id="@+id/botoRadiantDefense"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Radiant Defense" /> <!-- Texto del RadioButton -->
+    </LinearLayout>
+
+    <!-- Bloque 6 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <!-- ImageView -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background" /> <!-- Reemplaza con tu imagen -->
+
+        <!-- RadioButton -->
+        <RadioButton
+            android:id="@+id/botoPocketSoccer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Pocket Soccer" /> <!-- Texto del RadioButton -->
+    </LinearLayout>
+    <!-- Bloque 7 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <!-- ImageView -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background" /> <!-- Reemplaza con tu imagen -->
+
+        <!-- RadioButton -->
+        <RadioButton
+            android:id="@+id/botoNinjaJump"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Ninja Jump" /> <!-- Texto del RadioButton -->
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
