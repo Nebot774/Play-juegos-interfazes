@@ -36,7 +36,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_background" /> <!-- Reemplaza con tu imagen -->
+            android:src="@drawable/games_angrybirds" /> <!-- Reemplaza con tu imagen -->
 
         <!-- RadioButton -->
         <RadioButton
@@ -57,14 +57,15 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_background" /> <!-- Reemplaza con tu imagen -->
+            android:src="@drawable/games_dragonfly" /> <!-- Reemplaza con tu imagen -->
 
         <!-- RadioButton -->
         <RadioButton
+            android:id="@+id/dragonFly"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Opción 1" /> <!-- Texto del RadioButton -->
+            android:text="Dragon Fly" /> <!-- Texto del RadioButton -->
     </LinearLayout>
     <!-- Bloque 3 -->
     <LinearLayout
@@ -77,7 +78,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_background" /> <!-- Reemplaza con tu imagen -->
+            android:src="@drawable/games_hillclimbingracing" /> <!-- Reemplaza con tu imagen -->
 
         <!-- RadioButton -->
         <RadioButton
@@ -90,25 +91,6 @@
 
     <!-- Bloque 4 -->
     <!-- Bloque 5 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:orientation="horizontal">
-
-        <!-- ImageView -->
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_background" /> <!-- Reemplaza con tu imagen -->
-
-        <!-- RadioButton -->
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="Opción 1" /> <!-- Texto del RadioButton -->
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -120,7 +102,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_background" /> <!-- Reemplaza con tu imagen -->
+            android:src="@drawable/games_radiantdefense" /> <!-- Reemplaza con tu imagen -->
 
         <!-- RadioButton -->
         <RadioButton
@@ -142,7 +124,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_background" /> <!-- Reemplaza con tu imagen -->
+            android:src="@drawable/games_pocketsoccer" /> <!-- Reemplaza con tu imagen -->
 
         <!-- RadioButton -->
         <RadioButton
@@ -163,7 +145,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_background" /> <!-- Reemplaza con tu imagen -->
+            android:src="@drawable/games_ninjump" /> <!-- Reemplaza con tu imagen -->
 
         <!-- RadioButton -->
         <RadioButton
