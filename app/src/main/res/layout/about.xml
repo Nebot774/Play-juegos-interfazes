@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".about">
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_app_bar_menu" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:singleSelection="true"
+        app:chipSpacing="10dp">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chip_one"
+            app:chipBackgroundColor="@color/selector_chip_background_color"
+            app:chipCornerRadius="8dp"
+            app:chipStrokeWidth="1dp"
+            app:chipStrokeColor="@color/selector_chip_stroke_color"
+            app:chipIcon="@drawable/ic_filter"
+            app:chipIconTint="@color/selector_chip_icon_tint"
+            app:checkedIconVisible="true"
+            style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+        <!-- Agrega más chips como necesites aquí -->
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        app:layout_anchor="@id/bottom_app_bar"
+        app:srcCompat="@drawable/ic_add" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
