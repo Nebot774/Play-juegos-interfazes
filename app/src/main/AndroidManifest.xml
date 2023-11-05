@@ -18,6 +18,13 @@
             <!-- Elimina el intent filter de aquí -->
         </activity>
         <activity
+            android:name=".Games"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MaterialComponents">
+
+        </activity>
+        <activity
             android:name=".Preferences"
             android:exported="true"
             android:label="@string/app_name"

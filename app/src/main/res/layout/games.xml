@@ -43,7 +43,7 @@
             android:src="@drawable/games_angrybirds" /> <!-- Reemplaza con tu imagen -->
 
         <!-- RadioButton -->
-        <RadioButton
+        <CheckBox
             android:id="@+id/botoAngryBird"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -64,7 +64,7 @@
             android:src="@drawable/games_dragonfly" /> <!-- Reemplaza con tu imagen -->
 
         <!-- RadioButton -->
-        <RadioButton
+        <CheckBox
             android:id="@+id/dragonFly"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -85,7 +85,7 @@
             android:src="@drawable/games_hillclimbingracing" /> <!-- Reemplaza con tu imagen -->
 
         <!-- RadioButton -->
-        <RadioButton
+        <CheckBox
             android:id="@+id/botoHillClimbing"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -109,7 +109,7 @@
             android:src="@drawable/games_radiantdefense" /> <!-- Reemplaza con tu imagen -->
 
         <!-- RadioButton -->
-        <RadioButton
+        <CheckBox
             android:id="@+id/botoRadiantDefense"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -131,7 +131,7 @@
             android:src="@drawable/games_pocketsoccer" /> <!-- Reemplaza con tu imagen -->
 
         <!-- RadioButton -->
-        <RadioButton
+        <CheckBox
             android:id="@+id/botoPocketSoccer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -152,7 +152,7 @@
             android:src="@drawable/games_ninjump" /> <!-- Reemplaza con tu imagen -->
 
         <!-- RadioButton -->
-        <RadioButton
+        <CheckBox
             android:id="@+id/botoNinjaJump"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

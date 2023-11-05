@@ -1,5 +1,6 @@
 package com.example.playjuegos
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
@@ -10,6 +11,7 @@ import androidx.activity.ComponentActivity
 
 
 class MainActivity : ComponentActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -17,6 +19,9 @@ class MainActivity : ComponentActivity() {
         jugador.setOnClickListener { lanzarNewPlayer() }
         val preferense=findViewById<Button>(R.id.button3)
         preferense.setOnClickListener{lanzarPreferences()}
+        val games=findViewById<Button>(R.id.button2)
+        games.setOnClickListener{lanzarGames()}
+
     }
 
     private fun lanzarNewPlayer() {
@@ -26,6 +31,11 @@ class MainActivity : ComponentActivity() {
 
     private fun lanzarPreferences() {
         val i = Intent(this, Preferences::class.java)
+        startActivity(i)
+    }
+
+    private fun lanzarGames(){
+        val i = Intent(this, Games::class.java)
         startActivity(i)
     }
 
