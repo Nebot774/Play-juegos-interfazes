@@ -35,7 +35,7 @@ class Preferences : AppCompatActivity() {
             }
 
             override fun onStartTrackingTouch(seekBar: SeekBar?) {
-                // Opcional: Manejar inicio de toque aquí si es necesario
+                // Opcional: Manejar inicio de toque aquí si es necesarioa
             }
 
             override fun onStopTrackingTouch(seekBar: SeekBar?) {
