@@ -3,49 +3,114 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".about">
+    android:layout_height="match_parent">
 
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/bottom_app_bar"
+    <!-- Aquí puedes colocar otros componentes como AppBarLayout si los necesitas -->
+
+    <!-- Alinear el LinearLayout al principio del parent con layout_behavior si es necesario -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        app:menu="@menu/bottom_app_bar_menu" />
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <com.google.android.material.chip.ChipGroup
-        android:id="@+id/chip_group"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        app:singleSelection="true"
-        app:chipSpacing="10dp">
-
-        <com.google.android.material.chip.Chip
-            android:id="@+id/chip_one"
+        <!-- Ttextview -->
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/chip_one"
-            app:chipBackgroundColor="@color/selector_chip_background_color"
-            app:chipCornerRadius="8dp"
-            app:chipStrokeWidth="1dp"
-            app:chipStrokeColor="@color/selector_chip_stroke_color"
-            app:chipIcon="@drawable/ic_filter"
-            app:chipIconTint="@color/selector_chip_icon_tint"
-            app:checkedIconVisible="true"
-            style="@style/Widget.MaterialComponents.Chip.Filter" />
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Plataformas:"
+            android:textSize="34sp" />
 
-        <!-- Agrega más chips como necesites aquí -->
+        <!-- Chi Group-->
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupPlataformas"
+            android:layout_width="399dp"
+            android:layout_height="158dp"
+            android:layout_marginLeft="20dp"
+            app:chipSpacing="8dp"
+            app:singleSelection="true"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="61dp">
 
-    </com.google.android.material.chip.ChipGroup>
 
-    <FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
-        app:layout_anchor="@id/bottom_app_bar"
-        app:srcCompat="@drawable/ic_add" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipPs4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PS4"
+                app:checkable="true" />
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipPC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PC"
+                app:checkable="true" />
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipXBOX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XBOX"
+                app:checkable="true" />
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipWii"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WII"
+                app:checkable="true" />
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipWiiu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WIIU"
+                app:checkable="true" />
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip3DS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3DS"
+                app:checkable="true" />
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipX360"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X360"
+                app:checkable="true" />
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:id="@+id/textViewGenero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Género"
+            android:textSize="34sp" />
+
+        
+        <ListView
+            android:id="@+id/listViewGenero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/genero_array"/>
+
+    </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>

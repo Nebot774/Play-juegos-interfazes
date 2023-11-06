@@ -21,7 +21,14 @@ class MainActivity : ComponentActivity() {
         preferense.setOnClickListener{lanzarPreferences()}
         val games=findViewById<Button>(R.id.button2)
         games.setOnClickListener{lanzarGames()}
+        val about=findViewById<Button>(R.id.button4)
+        about.setOnClickListener{lanzarAbout()}
 
+    }
+
+    private fun lanzarAbout() {
+        val i = Intent(this, about::class.java)
+        startActivity(i)
     }
 
     private fun lanzarNewPlayer() {

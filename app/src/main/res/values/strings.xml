@@ -5,4 +5,17 @@
     <string name="action_add">add</string>
     <string name="fab_description">Descripción de la acción del botón</string>
     <string name="fab_description2">Botón de acción flotante</string> <!-- Texto que describe el FAB -->
+
+    <string-array name="genero_array">
+        <item>Accion</item>
+        <item>Aventura</item>
+        <item>Deportes</item>
+        <item>Disparos</item>
+        <item>Estrategia</item>
+        <item>Lucha</item>
+        <item>Musical</item>
+        <item>Rol</item>
+        <item>Simulacion</item>
+    </string-array>
+
 </resources>
