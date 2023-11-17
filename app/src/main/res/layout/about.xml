@@ -5,16 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Aquí puedes colocar otros componentes como AppBarLayout si los necesitas -->
-
-    <!-- Alinear el LinearLayout al principio del parent con layout_behavior si es necesario -->
+    <!-- Envoltura en LinearLayout para alinear los elementos verticalmente -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <!-- Ttextview -->
+        <!-- TextView para Plataformas -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,16 +22,14 @@
             android:text="Plataformas:"
             android:textSize="34sp" />
 
-        <!-- Chi Group-->
+        <!-- ChipGroup para las opciones de Plataformas -->
         <com.google.android.material.chip.ChipGroup
             android:id="@+id/chipGroupPlataformas"
-            android:layout_width="399dp"
-            android:layout_height="158dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             app:chipSpacing="8dp"
-            app:singleSelection="true"
-            tools:layout_editor_absoluteX="4dp"
-            tools:layout_editor_absoluteY="61dp">
+            app:singleSelection="true">
 
 
             <com.google.android.material.chip.Chip
@@ -41,7 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="PS4"
-                 />
+                />
 
 
             <com.google.android.material.chip.Chip
@@ -49,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="PC"
-                 />
+                />
 
 
             <com.google.android.material.chip.Chip
@@ -65,7 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="WII"
-                 />
+                />
 
 
             <com.google.android.material.chip.Chip
@@ -73,7 +69,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="WIIU"
-                 />
+                />
 
 
             <com.google.android.material.chip.Chip
@@ -81,7 +77,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3DS"
-                 />
+                />
 
 
             <com.google.android.material.chip.Chip
@@ -89,11 +85,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="X360"
-                 />
-
+                />
 
         </com.google.android.material.chip.ChipGroup>
 
+        <!-- TextView para Género -->
         <TextView
             android:id="@+id/textViewGenero"
             android:layout_width="wrap_content"
@@ -104,11 +100,13 @@
             android:text="Género"
             android:textSize="34sp" />
 
+        <!-- RecyclerView para mostrar las plataformas -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewPlataformas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewPlataformas"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
+    </LinearLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
