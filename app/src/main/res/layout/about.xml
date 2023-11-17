@@ -104,13 +104,11 @@
             android:text="Género"
             android:textSize="34sp" />
 
-        
-        <ListView
-            android:id="@+id/listViewGenero"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/genero_array"/>
 
-    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPlataformas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

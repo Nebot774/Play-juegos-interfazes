@@ -2,15 +2,21 @@ package com.example.playjuegos
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+
 class about : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.about)
 
-        // Inicializa tus vistas y otras configuraciones aquí
-    }
+        // Datos de ejemplo
+        val itemList = listOf("Acción", "Aventura", "Deporte","Disparos","Estrategia","Lucha","Musical","Rol","Simulacion")
 
-    // Aquí podrías añadir más métodos relacionados con el ciclo de vida de la actividad
-    // y cualquier otra lógica específica de la actividad
+        // Configuración del RecyclerView
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerViewPlataformas)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = GenerosAdapter(itemList)
+    }
 }

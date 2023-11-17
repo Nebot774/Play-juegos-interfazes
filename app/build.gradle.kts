@@ -51,6 +51,7 @@ android {
 
 dependencies {
 
+    implementation ("androidx.recyclerview:recyclerview:1.2.1")
     implementation ("com.google.android.material:material:1.10.0")
     implementation ("com.google.android.material:material:<latest_version>")
     implementation ("com.google.android.material:material:<latest_version>")
